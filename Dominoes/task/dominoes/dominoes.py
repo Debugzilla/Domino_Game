@@ -206,7 +206,7 @@ def check_win(player, computer, snake_tiles):
         sys.exit()
     elif snake_tiles[0][0] == snake_tiles[-1][1]:
         counter = 0
-        for tile in snake_tiles: c 
+        for tile in snake_tiles:
             counter += tile.count(snake_tiles[0][0])
             if counter == 8:
                 print("\nStatus: The game is over. It's a draw!")
@@ -215,4 +215,3 @@ def check_win(player, computer, snake_tiles):
 
 if __name__ == "__main__":
     main()
-
